@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>永续合约资金费率对比 · 币安/OKX/Bybit 实时排行</title>
+<meta name="description" content="实时对比币安、OKX、Bybit 三大交易所的永续合约资金费率，按年化排序，标出做空收租收益最高和跨所价差最大的币种。每 10 分钟更新。">
+<meta name="keywords" content="资金费率,funding rate,永续合约,套利,币安,OKX,Bybit,做空收租">
+<meta property="og:title" content="永续合约资金费率对比 · 币安/OKX/Bybit">
+<meta property="og:description" content="一眼看出哪个币做空收租收益最高，哪家交易所费率最划算。">
+<meta property="og:type" content="website">
+<link rel="canonical" href="./">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset",
+ "name":"永续合约资金费率对比数据",
+ "description":"币安/OKX/Bybit USDT 永续合约资金费率，按年化排序",
+ "temporalCoverage":"2026-11-14",
+ "creator":{"@type":"Organization","name":"FundingRate Compare"}}
+</script>
+<style>
+:root{--bg:#0a0e14;--card:#12171f;--line:#1e252f;--fg:#e6edf3;--muted:#7d8590;
+      --pos:#3fb950;--neg:#f85149;--accent:#58a6ff;--gold:#d29922}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:14px/1.65 -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;padding:24px 16px}
+.wrap{max-width:1000px;margin:0 auto}
+h1{font-size:21px;font-weight:600;margin-bottom:6px;letter-spacing:-.2px}
+.sub{color:var(--muted);font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:18px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.stat .k{color:var(--muted);font-size:12px;margin-bottom:2px}
+.stat .v{font-size:19px;font-weight:600}
+.tip{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:6px;padding:12px 14px;margin:16px 0;color:var(--muted);font-size:13px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:16px 0}
+.panel h2{font-size:14px;font-weight:600;margin-bottom:10px;color:var(--gold)}
+.panel ul{list-style:none;font-size:13px}
+.panel li{padding:5px 0;border-bottom:1px dashed var(--line);color:var(--muted)}
+.panel li:last-child{border:none}
+.panel b{color:var(--fg)}
+.gap{color:var(--gold);font-weight:600}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:8px;overflow:hidden;margin-top:8px}
+thead{background:#171d26}
+th{text-align:left;padding:10px 12px;font-size:12px;color:var(--muted);font-weight:500}
+td{padding:9px 12px;border-top:1px solid var(--line)}
+tr:hover td{background:#171d26}
+.sym{font-weight:600}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.num.strong{font-weight:600}
+.na{color:#484f58}
+.pos{color:var(--pos)} .neg{color:var(--neg)}
+.hint{color:var(--muted);font-size:12px}
+footer{margin-top:26px;color:var(--muted);font-size:12px;line-height:1.9}
+footer a{color:var(--accent);text-decoration:none}
+@media(max-width:640px){.hide-sm{display:none}h1{font-size:17px}th,td{padding:8px 6px;font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>永续合约资金费率对比</h1>
+  <div class="sub">币安 · OKX · Bybit ｜ 按年化排序 ｜ 更新于 2026-11-14 13:51 UTC</div>
+
+  <div class="stats">
+    <div class="stat"><div class="k">币安</div><div class="v">36</div></div><div class="stat"><div class="k">欧易</div><div class="v">36</div></div><div class="stat"><div class="k">Bybit</div><div class="v">45</div></div>
+    <div class="stat"><div class="k">覆盖币种</div><div class="v">66</div></div>
+    <div class="stat"><div class="k">正费率</div><div class="v">38</div></div>
+  </div>
+
+  <div class="tip">
+    资金费率为正 → 做多的人付钱给做空的人。<b>现货买入 + 永续做空</b>可对冲价格风险，只收这笔「租金」。
+    年化 3% 以上通常值得做；同一币种在不同交易所费率不同，<b>挑最高的那家做</b>。
+  </div>
+
+  <div class="panel"><h2>跨所价差 Top 8（同一币，不同交易所差多少）</h2><ul><li><b>SOPH</b>　币安 -309.57% / Bybit -1056.70%　<span class='gap'>差 747.13%</span></li><li><b>BARD</b>　币安 -463.04% / 欧易 -112.22% / Bybit -450.54%　<span class='gap'>差 350.81%</span></li><li><b>BERA</b>　币安 -350.78% / 欧易 -164.97% / Bybit -262.72%　<span class='gap'>差 185.80%</span></li><li><b>BTW</b>　币安 +5.48% / 欧易 -35.97% / Bybit +43.80%　<span class='gap'>差 79.77%</span></li><li><b>AKE</b>　币安 -57.73% / Bybit -10.52%　<span class='gap'>差 47.20%</span></li><li><b>MSTR</b>　币安 -54.47% / 欧易 -42.75% / Bybit -73.74%　<span class='gap'>差 30.99%</span></li><li><b>SPCX</b>　币安 -16.89% / Bybit -39.22%　<span class='gap'>差 22.33%</span></li><li><b>KORU</b>　币安 -10.23% / 欧易 -28.35% / Bybit -27.82%　<span class='gap'>差 18.12%</span></li></ul></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>币种</th>
+        <th class="num">币安</th><th class="num">欧易</th><th class="num">Bybit</th>
+        <th class="num">最高</th>
+        <th class="hide-sm">方向</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="sym">BTW</td><td class="num pos">+5.48%</td><td class="num neg">-35.97%</td><td class="num pos">+43.80%</td><td class="num pos strong">+43.80%</td><td class="hint">做空收租</td></tr><tr><td class="sym">AAVE</td><td class="num pos">+3.33%</td><td class="num pos">+4.82%</td><td class="num pos">+10.95%</td><td class="num pos strong">+10.95%</td><td class="hint">做空收租</td></tr><tr><td class="sym">HYPE</td><td class="num pos">+1.42%</td><td class="num pos">+7.09%</td><td class="num pos">+10.95%</td><td class="num pos strong">+10.95%</td><td class="hint">做空收租</td></tr><tr><td class="sym">INJ</td><td class="num pos">+10.95%</td><td class="num pos">+5.64%</td><td class="num pos">+4.60%</td><td class="num pos strong">+10.95%</td><td class="hint">做空收租</td></tr><tr><td class="sym">ZEC</td><td class="num pos">+8.82%</td><td class="num pos">+5.40%</td><td class="num pos">+6.38%</td><td class="num pos strong">+8.82%</td><td class="hint">做空收租</td></tr><tr><td class="sym">UNI</td><td class="num neg">-0.50%</td><td class="num neg">-0.48%</td><td class="num pos">+8.16%</td><td class="num pos strong">+8.16%</td><td class="hint">做空收租</td></tr><tr><td class="sym">TAO</td><td class="num pos">+2.51%</td><td class="num neg">-3.41%</td><td class="num pos">+5.48%</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">ETH</td><td class="num pos">+5.03%</td><td class="num neg">-1.33%</td><td class="num pos">+4.74%</td><td class="num pos strong">+5.03%</td><td class="hint">做空收租</td></tr><tr><td class="sym">BTC</td><td class="num pos">+3.58%</td><td class="num pos">+4.59%</td><td class="num pos">+2.96%</td><td class="num pos strong">+4.59%</td><td class="hint">做空收租</td></tr><tr><td class="sym">LINK</td><td class="num neg">-0.92%</td><td class="num neg">-5.45%</td><td class="num pos">+0.78%</td><td class="num pos strong">+0.78%</td><td class="hint">做空收租</td></tr><tr><td class="sym">SUI</td><td class="num pos">+0.46%</td><td class="num neg">-8.15%</td><td class="num neg">-2.69%</td><td class="num pos strong">+0.46%</td><td class="hint">做空收租</td></tr><tr><td class="sym">SOL</td><td class="num neg">-6.21%</td><td class="num neg">-3.39%</td><td class="num neg">-2.27%</td><td class="num neg strong">-2.27%</td><td class="hint">做多收租</td></tr><tr><td class="sym">AVAX</td><td class="num neg">-10.11%</td><td class="num neg">-19.78%</td><td class="num neg">-6.44%</td><td class="num neg strong">-6.44%</td><td class="hint">做多收租</td></tr><tr><td class="sym">KORU</td><td class="num neg">-10.23%</td><td class="num neg">-28.35%</td><td class="num neg">-27.82%</td><td class="num neg strong">-10.23%</td><td class="hint">做多收租</td></tr><tr><td class="sym">WLD</td><td class="num neg">-20.25%</td><td class="num neg">-19.01%</td><td class="num neg">-21.05%</td><td class="num neg strong">-19.01%</td><td class="hint">做多收租</td></tr><tr><td class="sym">MSTR</td><td class="num neg">-54.47%</td><td class="num neg">-42.75%</td><td class="num neg">-73.74%</td><td class="num neg strong">-42.75%</td><td class="hint">做多收租</td></tr><tr><td class="sym">BARD</td><td class="num neg">-463.04%</td><td class="num neg">-112.22%</td><td class="num neg">-450.54%</td><td class="num neg strong">-112.22%</td><td class="hint">做多收租</td></tr><tr><td class="sym">BERA</td><td class="num neg">-350.78%</td><td class="num neg">-164.97%</td><td class="num neg">-262.72%</td><td class="num neg strong">-164.97%</td><td class="hint">做多收租</td></tr><tr><td class="sym">JCT</td><td class="num pos">+14.56%</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num pos strong">+14.56%</td><td class="hint">做空收租</td></tr><tr><td class="sym">1000PEPE</td><td class="num neg">-2.05%</td><td class="num na">—</td><td class="num pos">+10.95%</td><td class="num pos strong">+10.95%</td><td class="hint">做空收租</td></tr><tr><td class="sym">NEAR</td><td class="num pos">+10.95%</td><td class="num na">—</td><td class="num pos">+10.95%</td><td class="num pos strong">+10.95%</td><td class="hint">做空收租</td></tr><tr><td class="sym">ENA</td><td class="num pos">+2.96%</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">LIT</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num pos">+5.48%</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">TRUMP</td><td class="num na">—</td><td class="num neg">-2.88%</td><td class="num pos">+5.48%</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">XRP</td><td class="num pos">+3.86%</td><td class="num na">—</td><td class="num neg">-4.12%</td><td class="num pos strong">+3.86%</td><td class="hint">做空收租</td></tr><tr><td class="sym">BNB</td><td class="num na">—</td><td class="num pos">+2.71%</td><td class="num pos">+3.22%</td><td class="num pos strong">+3.22%</td><td class="hint">做空收租</td></tr><tr><td class="sym">LTC</td><td class="num na">—</td><td class="num pos">+3.01%</td><td class="num neg">-1.41%</td><td class="num pos strong">+3.01%</td><td class="hint">做空收租</td></tr><tr><td class="sym">DOGE</td><td class="num neg">-6.01%</td><td class="num na">—</td><td class="num neg">-4.12%</td><td class="num neg strong">-4.12%</td><td class="hint">做多收租</td></tr><tr><td class="sym">ADA</td><td class="num neg">-11.27%</td><td class="num na">—</td><td class="num neg">-6.13%</td><td class="num neg strong">-6.13%</td><td class="hint">做多收租</td></tr><tr><td class="sym">SHELL</td><td class="num neg">-9.34%</td><td class="num na">—</td><td class="num neg">-7.87%</td><td class="num neg strong">-7.87%</td><td class="hint">做多收租</td></tr><tr><td class="sym">AKE</td><td class="num neg">-57.73%</td><td class="num na">—</td><td class="num neg">-10.52%</td><td class="num neg strong">-10.52%</td><td class="hint">做多收租</td></tr><tr><td class="sym">SPCX</td><td class="num neg">-16.89%</td><td class="num na">—</td><td class="num neg">-39.22%</td><td class="num neg strong">-16.89%</td><td class="hint">做多收租</td></tr><tr><td class="sym">SOPH</td><td class="num neg">-309.57%</td><td class="num na">—</td><td class="num neg">-1056.70%</td><td class="num neg strong">-309.57%</td><td class="hint">做多收租</td></tr><tr><td class="sym">BULLA</td><td class="num pos">+103.28%</td><td class="num na">—</td><td class="num na">—</td><td class="num pos strong">+103.28%</td><td class="hint">做空收租</td></tr><tr><td class="sym">DODOX</td><td class="num pos">+51.89%</td><td class="num na">—</td><td class="num na">—</td><td class="num pos strong">+51.89%</td><td class="hint">做空收租</td></tr><tr><td class="sym">ARIA</td><td class="num na">—</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">GIGGLE</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num na">—</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">IDOL</td><td class="num pos">+5.48%</td><td class="num na">—</td><td class="num na">—</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">PIEVERSE</td><td class="num na">—</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">QUANT</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num na">—</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">RIVER</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num na">—</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">TIA</td><td class="num na">—</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">VVV</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num na">—</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">ZEN</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num na">—</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">ZRO</td><td class="num na">—</td><td class="num na">—</td><td class="num pos">+5.48%</td><td class="num pos strong">+5.48%</td><td class="hint">做空收租</td></tr><tr><td class="sym">XAUT</td><td class="num na">—</td><td class="num na">—</td><td class="num pos">+3.27%</td><td class="num pos strong">+3.27%</td><td class="hint">做空收租</td></tr><tr><td class="sym">PUMP</td><td class="num pos">+3.00%</td><td class="num na">—</td><td class="num na">—</td><td class="num pos strong">+3.00%</td><td class="hint">做空收租</td></tr><tr><td class="sym">PUMPFUN</td><td class="num na">—</td><td class="num na">—</td><td class="num pos">+2.68%</td><td class="num pos strong">+2.68%</td><td class="hint">做空收租</td></tr><tr><td class="sym">XLM</td><td class="num na">—</td><td class="num na">—</td><td class="num pos">+1.65%</td><td class="num pos strong">+1.65%</td><td class="hint">做空收租</td></tr><tr><td class="sym">DASH</td><td class="num na">—</td><td class="num pos">+1.13%</td><td class="num na">—</td><td class="num pos strong">+1.13%</td><td class="hint">做空收租</td></tr><tr><td class="sym">STRK</td><td class="num na">—</td><td class="num pos">+0.92%</td><td class="num na">—</td><td class="num pos strong">+0.92%</td><td class="hint">做空收租</td></tr><tr><td class="sym">NBIS</td><td class="num neg">-0.62%</td><td class="num na">—</td><td class="num na">—</td><td class="num neg strong">-0.62%</td><td class="hint">做多收租</td></tr><tr><td class="sym">FIL</td><td class="num na">—</td><td class="num neg">-0.89%</td><td class="num na">—</td><td class="num neg strong">-0.89%</td><td class="hint">做多收租</td></tr><tr><td class="sym">ORDI</td><td class="num na">—</td><td class="num neg">-0.97%</td><td class="num na">—</td><td class="num neg strong">-0.97%</td><td class="hint">做多收租</td></tr><tr><td class="sym">ICP</td><td class="num na">—</td><td class="num neg">-2.79%</td><td class="num na">—</td><td class="num neg strong">-2.79%</td><td class="hint">做多收租</td></tr><tr><td class="sym">YFI</td><td class="num na">—</td><td class="num neg">-4.52%</td><td class="num na">—</td><td class="num neg strong">-4.52%</td><td class="hint">做多收租</td></tr><tr><td class="sym">TAC</td><td class="num neg">-4.86%</td><td class="num na">—</td><td class="num na">—</td><td class="num neg strong">-4.86%</td><td class="hint">做多收租</td></tr><tr><td class="sym">ONDO</td><td class="num na">—</td><td class="num na">—</td><td class="num neg">-8.34%</td><td class="num neg strong">-8.34%</td><td class="hint">做多收租</td></tr><tr><td class="sym">ARB</td><td class="num na">—</td><td class="num na">—</td><td class="num neg">-10.90%</td><td class="num neg strong">-10.90%</td><td class="hint">做多收租</td></tr><tr><td class="sym">BCH</td><td class="num na">—</td><td class="num neg">-13.69%</td><td class="num na">—</td><td class="num neg strong">-13.69%</td><td class="hint">做多收租</td></tr><tr><td class="sym">OKB</td><td class="num na">—</td><td class="num neg">-18.68%</td><td class="num na">—</td><td class="num neg strong">-18.68%</td><td class="hint">做多收租</td></tr><tr><td class="sym">AR</td><td class="num na">—</td><td class="num neg">-22.67%</td><td class="num na">—</td><td class="num neg strong">-22.67%</td><td class="hint">做多收租</td></tr><tr><td class="sym">KAVA</td><td class="num neg">-24.70%</td><td class="num na">—</td><td class="num na">—</td><td class="num neg strong">-24.70%</td><td class="hint">做多收租</td></tr><tr><td class="sym">XMR</td><td class="num na">—</td><td class="num na">—</td><td class="num neg">-53.11%</td><td class="num neg strong">-53.11%</td><td class="hint">做多收租</td></tr><tr><td class="sym">INIT</td><td class="num na">—</td><td class="num na">—</td><td class="num neg">-165.83%</td><td class="num neg strong">-165.83%</td><td class="hint">做多收租</td></tr><tr><td class="sym">BMT</td><td class="num na">—</td><td class="num na">—</td><td class="num neg">-357.50%</td><td class="num neg strong">-357.50%</td><td class="hint">做多收租</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    数据来源：各交易所公共 API，每 10 分钟自动更新。<br>
+    本页仅作数据展示，不构成投资建议。合约交易有风险，请自行判断。<br>
+    <a href="./about.html">关于本站</a>
+  </footer>
+</div>
+</body>
+</html>
